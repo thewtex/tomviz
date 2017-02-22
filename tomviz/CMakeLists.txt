@@ -267,6 +267,7 @@ set(python_files
   Pad_Data.py
   BinVolumeByTwo.py
   BinTiltSeriesByTwo.py
+  BinaryMinMaxCurvatureFlow.py
   )
 
 set(json_files
@@ -297,6 +298,7 @@ set(json_files
   Recon_WBP.json
   Shift3D.json
   ShiftTiltSeriesRandomly.json
+  BinaryMinMaxCurvatureFlow.json
   )
 
 set(resource_files
