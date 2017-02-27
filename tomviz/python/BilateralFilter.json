@@ -1,0 +1,21 @@
+{
+  "name" : "BilateralFilter",
+  "label" : "Bilateral Filter",
+  "description" : "Performs smoothing in both the spatial domain and intensity range.",
+  "parameters" : [
+    {
+      "name" : "domain_sigma",
+      "label" : "Domain Sigma",
+      "type" : "double",
+      "default" : 2.0,
+      "minimum" : 0.0
+    },
+    {
+      "name" : "range_sigma",
+      "label" : "Range Sigma",
+      "type" : "double",
+      "default" : 20.0,
+      "minimum" : 0.0
+    }
+  ]
+}

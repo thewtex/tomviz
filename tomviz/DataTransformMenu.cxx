@@ -106,6 +106,7 @@ void DataTransformMenu::buildMenu()
   QAction* peronaMalikeAnisotropicDiffusionAction =
     menu->addAction("Perona-Malik Anisotropic Diffusion");
   QAction* medianFilterAction = menu->addAction("Median Filter");
+  QAction* bilateralFilterAction = menu->addAction("Bilateral Filter");
   menu->addSeparator();
 
   QAction* cloneAction = menu->addAction("Clone");
@@ -203,6 +204,9 @@ void DataTransformMenu::buildMenu()
   new AddPythonTransformReaction(medianFilterAction, "Median Filter",
                                  readInPythonScript("MedianFilter"), false,
                                  false, readInJSONDescription("MedianFilter"));
+  new AddPythonTransformReaction(bilateralFilterAction, "Bilateral Filter",
+                                 readInPythonScript("BilateralFilter"), false,
+                                 false, readInJSONDescription("BilateralFilter"));
 
   new CloneDataReaction(cloneAction);
   new DeleteDataReaction(deleteDataAction);

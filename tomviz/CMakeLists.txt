@@ -267,6 +267,7 @@ set(python_files
   Pad_Data.py
   BinVolumeByTwo.py
   BinTiltSeriesByTwo.py
+  BilateralFilter.py
   )
 
 set(json_files
@@ -297,6 +298,7 @@ set(json_files
   Recon_WBP.json
   Shift3D.json
   ShiftTiltSeriesRandomly.json
+  BilateralFilter.json
   )
 
 set(resource_files
